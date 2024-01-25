@@ -12,9 +12,9 @@ function App() {
         <BrowserRouter>
           <Navbar/>
               <Routes>
-              <Route path="/" element={<Layout/>}/>
-              <Route path="/" element={<Login/>}/>
-              <Route path="/" element={<Signup/>}/>
+                <Route path="/" element={<Layout/>}/>
+                <Route path="Login" element={<Login/>}/>
+                <Route path="Signup" element={<Signup/>}/>
               </Routes>
         </BrowserRouter>
        
