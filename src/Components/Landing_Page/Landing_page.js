@@ -21,7 +21,7 @@ function Landing_Page() {
                     <div className="blue1 blob"></div>
                 </div>
               <h4>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque at quae ducimus. Suscipit omnis quibusdam non cum rem voluptatem! 
+              Explore a diverse range of healthcare professionals specializing in various fields. Our platform provides detailed profiles of each doctor, including their credentials, specialties, and expertise. Discover caring physicians who prioritize your well-being.
               </h4>
               <a href="#services">
                 <button className="button">Get Started</button>
