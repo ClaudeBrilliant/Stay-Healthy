@@ -10,7 +10,7 @@ function Landing_Page() {
               <h1>
                 Your Health<br/>
                 <span className="text-gradient">
-                  
+        
                   Our Responsibility
                 </span>
               </h1>
