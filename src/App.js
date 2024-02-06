@@ -5,6 +5,7 @@ import { BrowserRouter, Routes , Route} from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar.js';
 import Login from './Components/Login/Login.js';
 import Signup from './Components/Sign_Up/Sign_Up.js';
+import FindDoctorSearch from './Components/FindDoctorSearch/FindDoctorSearch.js'; 
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
                 <Route path="/" element={<Layout/>}/>
                 <Route path="Login" element={<Login/>}/>
                 <Route path="Signup" element={<Signup/>}/>
+                <Route path="SearchDoctor" element={FindDoctorSearch}></Route>
               </Routes>
         </BrowserRouter>
        
