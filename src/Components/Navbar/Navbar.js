@@ -1,7 +1,11 @@
-import React from 'react';
+import React,{useContext} from 'react';
+import { AuthContext } from '../context/AuthContext';
 import './Navbar.css';
+import {Link} from "react-router-dom"
 
 function Navbar() {
+  const { isLoggedIn, logout } = useContext(AuthContext);
+
     return (
         <div>
            <nav>
@@ -15,22 +19,26 @@ function Navbar() {
               <i className="fa fa-times fa fa-bars"></i>
             </div>
             <ul className="nav__links active">
+            {isLoggedIn ? (
+                    <li>
+                        <button onClick={logout}>Logout</button>
+                    </li>
+                ) : (
+            <>
              <li className="link">
-               <a href="../Landing_Page/LandingPage.html">Home</a>
+             <Link to="/">Home</Link>
              </li>
              <li className="link">
-               <a href=" ">Appointments</a>
+             <Link to="/InstantConsultation">Appointments</Link>
              </li>
              <li className="link">
-               <a href="/Signup">
-                <button className="btn1">Sign Up</button>
-               </a>
+             <Link to="/Signup"><button className="btn1">Sign Up</button></Link>
              </li>
              <li className="link">
-               <a href="/Login">
-                 <button className="btn1">Login</button>
-               </a>
+              <Link to="/login"><button className="btn1">Login</button></Link>
              </li>
+             </>
+             )}
            </ul>
 
           </nav>
