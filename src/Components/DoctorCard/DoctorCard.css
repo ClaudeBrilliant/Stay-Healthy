@@ -1,0 +1,31 @@
+.doctor-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.doctor-details h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.doctor-details p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.career-profile {
+    font-style: italic;
+    color: #888;
+}
