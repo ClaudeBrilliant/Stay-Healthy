@@ -6,9 +6,10 @@ import Navbar from './Components/Navbar/Navbar.js';
 import Login from './Components/Login/Login.js';
 import Signup from './Components/Sign_Up/Sign_Up.js';
 //import FindDoctorSearch from './Components/FindDoctorSearch/FindDoctorSearch.js'; 
-import AppointmentForm from './Components/InstantConsultationBooking/AppointmentFormIC/AppointmentFormIC.js';
+import AppointmentForm from './Components/AppointmentForm/AppointmentForm.js';
 import InstantConsultation from './Components/InstantConsultationBooking/InstantConsultation.js'
 import Dashboard from "./Components/Dashboard";
+import ReviewForm from './Components/ReviewForm/Reviews.js';
 
 function App() {
 
@@ -20,9 +21,10 @@ function App() {
                 <Route path="/" element={<Layout/>}/>
                 <Route path="Login" element={<Login/>}/>
                 <Route path="Signup" element={<Signup/>}/>
-                <Route path="appointments" element={<InstantConsultation/>} /> 
-                <Route path="InstantConsultaion" element={<InstantConsultation/>} />
+                <Route path="/AppointmentForm" element={<AppointmentForm/>} /> 
+                <Route path="InstantConsultation" element={<InstantConsultation/>} />
                 <Route path="/dashboard" element={<Dashboard/>}/>
+                <Route path="ReviewForm" element={<ReviewForm/>}/>
               </Routes>
         </BrowserRouter> 
     </div>
